@@ -27,16 +27,9 @@ public class Cambiador {
         this.valueToConver = valueToConver;
     }
 
-    public void connectApi() throws IOException {
-        // Setting URL
-
-
-    }
-
     public String converMoney() throws IOException {
         // Setting URL
-        String urlStr = "https://v6.exchangerate-api.com/v6/5bdfb4a0c14b4b52748f948b/latest/USD";
-
+        String urlStr = "https://v6.exchangerate-api.com/v6/bc95fcc3e09ce33790b50d4c/latest/USD";
         // Making Request
         URL url = new URL(urlStr);
         HttpURLConnection request = (HttpURLConnection) url.openConnection();
